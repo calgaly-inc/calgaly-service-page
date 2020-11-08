@@ -519,7 +519,7 @@
           <div class="container">
             <h5 class="mb-3"><u><strong>お問い合わせ</strong></u></h5>
             <h6 class="mb-3 px-4"><a href="https://line.me/R/ti/p/%40xry5037y" class="text-success" role="button"><strong>CalGaly公式LINE</strong></a>からもお問い合わせを受け付けております。</h6>
-            <form  method="POST" data-netlify="true" class="px-4">
+            <form  method="POST" class="px-4" netlify>
               <div class="form-group">
                 <label>メールアドレス</label>
                 <input type="email" class="form-control" name="email" placeholder="メールアドレスを入力">
@@ -530,6 +530,30 @@
               </div>
               <button type="submit" class="btn btn-light">送信</button>
             </form>
+            
+            <form method="POST" data-netlify="true">
+            <div class="item">
+                <label class="label">お問い合わせ項目</label>
+                <input type="radio" name="fap" value="male">お問い合わせ
+                <input type="radio" name="fap" value="female">メール申込み
+            </div>
+            <div class="item">
+                <label class="label">お名前</label>
+                <input class="inputs" type="text" name="name">
+            </div>
+            <div class="item">
+                <label class="label">メールアドレス</label>
+                <input class="inputs" type="email" name="email">
+            </div>
+            <div class="item">
+                <label class="label">お問い合わせ内容</label>
+                <textarea name="message"></textarea>
+            </div>
+            <div class="btn-area">
+                <input type="submit" value="送信">
+            </div>
+            </form>
+            
           </div>
         </section>
       </div>
